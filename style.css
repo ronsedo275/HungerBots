@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #18181B;
+    font-family: sans-serif;
+    min-height:200vh;
+    cursor: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Custom Cursor */
+
+.cursor-dot{
+    width: 17px;
+    height: 17px;
+    background-color: white;
+}
+
+.cursor-outline{
+    width: 35px;
+    height: 35px;
+    border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Navbar */
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: .75rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: all .4s ease;
+}
+
+li a:hover{
+    background-color: #211A63;
+    padding: 0.6rem;
+    border-radius: 25px;
+}
+
+.nav-bar{
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 1.1rem;
+    flex-direction: row;
+}
+
+.sign-in{
+    background: none;
+    border: 2px solid #2B2480;
+    border-radius: 5px;
+    color: #2B2480;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-left: 9rem;
+    transition: all .4s ease;
+}
+
+.sign-in:hover{
+    border: 2px solid #E3E4E6;
+    color: #E3E4E6;
+}
+
+
+.sign-up{
+    color: #E3E4E6;
+    border: none;
+    background: #2B2480;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-left: 2rem;
+    transition: all .4s ease;
+}
+
+.sign-up:hover{
+    background: #282266;
+    color: #d2d2d2;
+}
+
+.navbar{
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Home Page */
+
+.gradient-text {
+    background-image: linear-gradient( #2A1D9E, #473ab5); 
+    -webkit-background-clip: text; 
+    color: transparent; 
+  }
+
+  .home-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+  }
+
+  .home-page h1{
+    color: #E3E4E6;
+    font-size: 70px;
+  }
+
+  .blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 90px #2B2480;
+    z-index: -100;
+  }
+
+  /* Sign In */
+
+  .container-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .div-form{
+    background: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem;
+    border-radius: 30px;
+    width: 25rem;
+    height: 30rem;
+    margin-top: 5rem;
+}
+
+.container .div-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-form button{
+    color: #E3E4E6;
+    border: none;
+    background: #2B2480;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all .5s ease;
+    width: 16rem;
+}
+
+.div-form button:hover{
+    border: none;
+    background: #2B2480;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 14px;
+}
+
+.input input{
+    color: white;
+    background: #3d3d3d;
+    border: none;
+    border-radius: 14px;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    width: 16rem;
+    transition: all .4s ease;
+}
+
+.input input:hover{
+    border: 1px solid white;
+}
+
+form h1{
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    color: #f3f1f1;
+}
+
+/* Direction */
+
+.header{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 3.5rem;
+}
+
+.features{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 1rem 18rem;
+}
+
+.features .card{
+    background-color: #27272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.features .card:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.features .card span{
+    display: inline-block;
+    background-color: #4134B1;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.features .card h4{
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.features .card p{
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.features .card a{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.features .card a:hover{
+    color: #4134B1;
+}
+
+.sub-header{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #ccc;
+}
+
+.pricing{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing .card{
+    padding: 3rem 2rem;
+    background-color: #27272a;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.pricing .card:hover{
+    background-color: #323232;
+    border-color: #fff;
+}
+
+.pricing .card .content{
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card h4{
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing .card h3{
+    color: #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed #fff;
+}
+
+.pricing .card p{
+    color: #fff;
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card p i{
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.pricing .card button{
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.pricing .card button:hover{
+    background-color: #1e40af;
+    border-color: #1e40af;
+}
+
+/* Contact Form */
+
+footer{
+    margin-top: 4.5rem;
+    padding: 7rem 5rem;
+}
+
+footer .contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transform: scale(1.1);
+    
+}
+
+
+.container-form{
+    display: flex;
+    gap: 1rem;
+}
+
+input{
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    width: 23rem;
+    background: #27272a;
+    border: none;
+    transition: all .4s ease;
+}
+
+input:hover{
+    background: #323232;
+    border: 1px solid white;
+}
+
+.input-label-suggestion{
+    height: 5.1rem;
+    width: 47rem;
+}
+
+.btn{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 1rem 3rem;
+    width: 47rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.btn:hover{
+    background: #2B2480;
+    border: 1px solid #2B2480;
+}
+
+.contact h1{
+    margin-bottom: 2rem;
+    font-size: 45px;
+}
