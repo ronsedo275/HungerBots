@@ -78,45 +78,13 @@ li a:hover{
 }
 
 .nav-bar{
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     display: flex;
     justify-content: center;
     padding: 1.1rem;
     flex-direction: row;
 }
 
-.sign-in{
-    background: none;
-    border: 2px solid #2B2480;
-    border-radius: 5px;
-    color: #2B2480;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    margin-left: 9rem;
-    transition: all .4s ease;
-}
-
-.sign-in:hover{
-    border: 2px solid #E3E4E6;
-    color: #E3E4E6;
-}
-
-
-.sign-up{
-    color: #E3E4E6;
-    border: none;
-    background: #2B2480;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    margin-left: 2rem;
-    transition: all .4s ease;
-}
-
-.sign-up:hover{
-    background: #282266;
-    color: #d2d2d2;
-}
 
 .navbar{
     border: 1px solid red;
