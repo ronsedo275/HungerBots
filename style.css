@@ -10,7 +10,6 @@
 body{
     background: #18181B;
     font-family: sans-serif;
-    min-height:200vh;
     cursor: none;
     display: flex;
     justify-content: center;
@@ -27,7 +26,7 @@ body{
 .cursor-outline{
     width: 35px;
     height: 35px;
-    border: 2px solid hsla(0, 0%, 100%, 0.5);
+    border: 2px solid #ffffff80;
 }
 
 .cursor-dot,
@@ -44,6 +43,7 @@ body{
 /* Navbar */
 
 .nav-links{
+    margin-top: 2rem;
     list-style: none;
     display: flex;
     align-items: center;
@@ -87,7 +87,6 @@ li a:hover{
 
 
 .navbar{
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,17 +105,17 @@ li a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 550px;
+    height: 650px;
   }
 
   .home-page h1{
     color: #E3E4E6;
-    font-size: 70px;
+    font-size: 80px;
   }
 
   .blur{
     position: absolute;
-    box-shadow: 0 0 1000px 90px #2B2480;
+    box-shadow: 0 0 1000px 100px #2B2480;
     z-index: -100;
   }
 
@@ -196,7 +195,9 @@ form h1{
     display: flex;
     justify-content: center;
     color: #fff;
-    margin-top: 3.5rem;
+    margin-top: 4.7rem;
+    font-size: 55px;
+    line-height: 2.5;
 }
 
 .features{
@@ -209,7 +210,7 @@ form h1{
 
 .features .card{
     background-color: #27272a;
-    padding: 1rem;
+    padding: 3rem;
     border: 2px solid transparent;
     border-radius: 15px;
     transition: all 0.3s ease;
@@ -223,7 +224,7 @@ form h1{
 .features .card span{
     display: inline-block;
     background-color: #4134B1;
-    padding: 2px 9px;
+    padding: 9px 10px;
     margin-bottom: 1rem;
     font-size: 1.75rem;
     color: #fff;
@@ -233,7 +234,7 @@ form h1{
 .features .card h4{
     margin-bottom: 0.5rem;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 3rem;
     font-weight: 600;
 }
 
@@ -326,7 +327,7 @@ form h1{
 /* Contact Form */
 
 footer{
-    margin-top: 4.5rem;
+    margin-top: 14rem;
     padding: 7rem 5rem;
 }
 
@@ -337,7 +338,6 @@ footer .contact-form{
     justify-content: center;
     gap: 1rem;
     transform: scale(1.1);
-    
 }
 
 
