@@ -1,115 +1,60 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-  }
-  
-  body {
-    background: #18181B;
-  }
-
-  .go-back{
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-  }
-
-  a{
-    text-decoration: none;
-    color: #fff;
-    transition: all .4s ease;
-    font-weight: 600;
-  }
-  
-a:hover{
-    color: #c8c8c8;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-  .banner {
-    text-align: center;
-    color: white;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .banner h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
-  }
-  
-  .banner p {
-    color: #d1d1d1;
-    margin-top: 5px;
-    width: 500px;
-  }
-  
-  .drives {
-    background: #27272a;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 10px;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    line-height: 1.5rem;
-  }
-  
-  .food-bank, .feeding-america {
-    border-bottom: 1px solid #18181B;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally */
-  }
-  
-    img {
-    max-width: 100%; 
-    border-radius: 20px;
-  }
-  
-  .food-bank-description, .feeding-america-description {
-    padding: 2.5rem;
-    text-align: center; 
-  }
+h1{
+  color: rgb(223, 223, 223);
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 200;
+}
 
-  .food-bank-description, .feeding-america-description p{
-    width: 500px;
-  }
+body{
+  font-family: sans-serif;
+  background: #18181B;
+}
+
+.input-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 1rem 1rem;
+
+}
+
+input{
+  border-radius: 25px;
+  font-size: 20px;
+  padding: 8px 40px 8px 20px;
+  border: none;
+  background-color: #27272a;
   
-  .drives h1 {
-    color: white;
-    margin-bottom: 15px;
-  }
-  
-  .span {
-    color: #999999;
-  }
-  
-  .feeding-america {
-    padding: 2rem;
-  }
+}
 
-  .blur{
-    position: absolute;
-    box-shadow: 0 0 1000px 100px #2B2480;
-    z-index: -100;
-  }
+input::placeholder{
+  color: rgb(221, 221, 221);
+  font-size: 15px;
+}
 
-  .btn{
-    padding: 1rem;
-    border: 1.2px solid #fff;
-    background: transparent;
-    color: #fff;
-    border-radius: 5px;
-    transition: all .4s ease;
-    cursor: pointer;
+main p{
+  color: white;
+  font-weight: 200;
+  font-size: 30px;
+}
 
-  }
+.state-drives{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
+  gap: 1rem;
+}
 
-  .btn:hover{
-    background: #2B2480;
-    border: 1px solid #2B2480;
-  }
+.state-drives div{
+  background: blue;
+  padding: .3rem .3rem .3rem .3rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
