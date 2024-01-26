@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  color: rgb(223, 223, 223);
+  margin-top: 10px;
+  font-size: 29px;
+  font-weight: 200;
+  text-align: center;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+body{
+  font-family: sans-serif;
+  background: #18181B;
+  margin-left: 1rem;
+}
+
+
+input::placeholder{
+  color: rgb(221, 221, 221);
+  font-size: 15px;
+}
+
+main p{
+  color: rgb(224, 224, 224);
+  font-weight: 200;
+  font-size: 20px;
+
+}
+
+.state-drives{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(14rem), 1fr));
+  gap: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 5rem;
+  padding: 5rem;
+}
+
+.state-drives .state{
+  background: #27272a;
+  cursor: pointer;
+  padding: 1rem 0rem 1rem 0rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .4s ease;
+  text-transform: uppercase;
+  border: 1px solid #27272a;
+}
+
+.state:hover{
+  background: #323232;
+  border: .5px solid white;
+  color: white;
+}
